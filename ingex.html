@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมุดวันเกิดแฟน</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book">
+        <div class="page" id="page1">
+            <h1>สุขสันต์วันเกิด [ชื่อแฟน] 🎉</h1>
+            <img src="images/cake.png" alt="เค้กวันเกิด">
+            <button onclick="nextPage()">เปิดหน้าถัดไป</button>
+        </div>
+        <div class="page" id="page2">
+            <h2>เขียนข้อความของคุณที่นี่ 💌</h2>
+            <textarea id="message" placeholder="พิมพ์ข้อความ..."></textarea>
+            <button onclick="prevPage()">ย้อนกลับ</button>
+            <button onclick="addMessage()">บันทึกข้อความ</button>
+        </div>
+        <div class="page" id="page3">
+            <h2>หน้าเต็มไปด้วยความน่ารัก 💖</h2>
+            <img src="images/heart.png" class="decor">
+            <button onclick="prevPage()">ย้อนกลับ</button>
+        </div>
+    </div>
 
+    <audio id="music" src="birthday-song.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
